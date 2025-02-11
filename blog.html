@@ -44,9 +44,8 @@
     </main>
 
     <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2025 My Website. All rights reserved.</p>
-    </footer>
+    <div id="footer-placeholder"></div>
+
 
 <script>
     // Fetch and insert the header
@@ -54,6 +53,15 @@
         .then(response => response.text())
         .then(data => {
             document.getElementById('nav-placeholder').innerHTML = data;
+        });
+</script>
+
+<script>
+    // Fetch and insert the footer
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
         });
 </script>
 

@@ -6,9 +6,12 @@
     <title>Newsletter - My Website</title>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
 <body>
   
- <div id="nav-placeholder"></div>
+ <!-- Header Section -->
+        <div id="nav-placeholder"></div>
+        <div class="body-content">
 
 <main>
 <div id="nav-placeholder"></div>
@@ -16,8 +19,28 @@
     <h1>Newsletter</h1>
     <p> Coming Soon! Subscribe </p>
 </main>
+    </div>
 <footer>
         <p>&copy; 2025 My Website. All rights reserved.</p>
     </footer>
+
+<script>
+    // Fetch and insert the header
+    fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('nav-placeholder').innerHTML = data;
+        });
+</script>
+
+<script>
+    // Fetch and insert the footer
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+        });
+</script>
+
 </body>
 </html>

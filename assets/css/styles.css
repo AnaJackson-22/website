@@ -1,0 +1,69 @@
+body {
+    font-family: 'oswald', sans-serif;
+    line-height: 1.6; 
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;  /* Applies a different font for headings */
+    font-weight: 700;  /* Makes headings bold */
+    color: #222;  /* Darker color for emphasis */
+}
+
+p {
+    font-family: 'Inter', sans-serif;  /* Ensures paragraphs use a separate font */
+    font-size: 1rem;
+}
+
+header {
+    background: #990011;
+    color: #fff;
+    padding: 10px 20px;
+}
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+header li {
+    margin-right: 20px;
+}
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Blog Post Styles */
+.blog-post {
+    padding: 15px;
+    border: 1px solid #ddd;  /* Adds a light border */
+    border-radius: 5px;  /* Rounds the corners */
+    background-color: #fff;  /* White background */
+}
+
+header a:hover {
+    text-decoration: underline;  /* Adds underline when hovered */
+}
+
+/* Add padding/margin above footer */
+.blog-list {
+    margin-bottom: 60px; /* Adds space below the last blog post */
+}
+
+/* Alternatively, add space to the whole main section */
+main {
+    padding-bottom: 60px;
+}
+
+
+footer {
+    background: #990011;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

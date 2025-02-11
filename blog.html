@@ -1,9 +1,61 @@
-<main>
-    <h1>Our Blog</h1>
-    <p>Check out our latest articles!</p>
-    <ul>
-        <li><a href="#">Blog Post 1</a></li>
-        <li><a href="#">Blog Post 2</a></li>
-        <li><a href="#">Blog Post 3</a></li>
-    </ul>
-</main>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog page showcasing the latest articles on various topics.">
+    
+    <!-- Page Title -->
+    <title>Blog - My Website</title>
+    
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <div id="nav-placeholder"></div>
+
+
+    <!-- Main Content Section -->
+    <main>
+        <h1>Welcome to Our Blog</h1>
+        <p>Read our latest posts below.</p>
+
+        <!-- Blog Posts -->
+        <div class="blog-list">
+            <!-- Blog Post 1 -->
+            <article class="blog-post">
+                <h2><a href="#">Blog Post Title 1</a></h2>
+                <p class="blog-meta">Published on Feb 10, 2025</p>
+                <p>Here’s a brief introduction to the blog post. Click the link to read more!</p>
+                <a class="read-more" href="#">Read More →</a>
+            </article>
+
+            <!-- Blog Post 2 -->
+            <article class="blog-post">
+                <h2><a href="#">Blog Post Title 2</a></h2>
+                <p class="blog-meta">Published on Feb 8, 2025</p>
+                <p>This is another snippet of an interesting blog post. Click below to dive in!</p>
+                <a class="read-more" href="#">Read More →</a>
+            </article>
+        </div>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 My Website. All rights reserved.</p>
+    </footer>
+
+<script>
+    // Fetch and insert the header
+    fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('nav-placeholder').innerHTML = data;
+        });
+</script>
+
+</body>
+</html>

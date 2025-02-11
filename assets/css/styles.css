@@ -59,10 +59,10 @@ main {
 
 
 footer {
-    background: #990011;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
+    background: #255;
+    color: 990011;
+    text-align: left;
+    padding: 40px 0;
     position: fixed;
     width: 100%;
     bottom: 0;

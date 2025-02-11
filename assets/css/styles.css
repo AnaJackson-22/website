@@ -2,7 +2,10 @@ body {
     font-family: 'oswald', sans-serif;
     line-height: 1.6; 
     margin: 0;
-    padding: 0;
+}
+
+.body-content {
+  padding: 20px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -19,7 +22,7 @@ p {
 header {
     background: #990011;
     color: #fff;
-    padding: 10px 20px;
+    padding: 15px 30px;
 }
 header ul {
     list-style: none;
@@ -28,7 +31,7 @@ header ul {
     display: flex;
 }
 header li {
-    margin-right: 20px;
+    margin-right: 30px;
 }
 header a {
     color: white;
@@ -37,7 +40,7 @@ header a {
 
 /* Blog Post Styles */
 .blog-post {
-    padding: 15px;
+    padding: 20px;
     border: 1px solid #ddd;  /* Adds a light border */
     border-radius: 5px;  /* Rounds the corners */
     background-color: #fff;  /* White background */
@@ -59,11 +62,13 @@ main {
 
 
 footer {
-    background: #255;
-    color: 990011;
-    text-align: left;
-    padding: 40px 0;
-    position: fixed;
-    width: 100%;
+    border-top: 1px solid #ccc; /* Thin gray line */
+    background: #FFFFFF;
+    position: absolute;
     bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: left;
+    padding: 30px; /* Padding for the text inside the footer */
+    color: #990011;
 }

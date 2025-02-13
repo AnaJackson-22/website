@@ -3,23 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - My Website</title>
+    <title>How to Create a Blog</title>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-
 <body>
-        <!-- Header Section -->
-        <div id="nav-placeholder"></div>
-        <div class="body-content">
-  
+    <!-- Header Section -->
+    <div id="nav-placeholder"></div>
 
-    <main>
-        <h1>Welcome to My Website</h1>
-        <p>This is the homepage of our awesome website!</p>
+    <!-- Blog Post Content -->
+    <main class="blog-post">
+        <article>
+            <h1 id="blog-title">How to Create a Blog</h1>
+            <p class="blog-meta" id="blog-date">Published on February 13, 2025</p>
+            <div id="blog-content">
+                <p>Welcome to my first blog post! Here, I’ll share how to create a blog from scratch...</p>
+                <p>This tutorial walks you through creating a simple website structure...</p>
+            </div>
+        </article>
     </main>
 
-        <!-- Footer Section -->     
-        <div id="footer-placeholder"></div>
+   <!-- Footer Section -->
+    <div id="footer-placeholder"></div>
+
 
 <script>
     // Fetch and insert the header
@@ -38,6 +43,6 @@
             document.getElementById('footer-placeholder').innerHTML = data;
         });
 </script>
-      </div>
+
 </body>
 </html>

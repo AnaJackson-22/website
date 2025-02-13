@@ -22,7 +22,7 @@ p {
 header {
     background: #990011;
     color: #fff;
-    padding: 15px 30px;
+    padding: 25px 50px;
 }
 header ul {
     list-style: none;
@@ -38,13 +38,29 @@ header a {
     text-decoration: none;
 }
 
-/* Blog Post Styles */
 .blog-post {
-    padding: 20px;
-    border: 1px solid #ddd;  /* Adds a light border */
-    border-radius: 5px;  /* Rounds the corners */
-    background-color: #fff;  /* White background */
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 0 10px;
+    line-height: 1.6;
+    font-family: 'Inter', sans-serif;
 }
+
+.blog-post h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.blog-meta {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+#blog-content p {
+    margin-bottom: 15px;
+}
+
 
 header a:hover {
     text-decoration: underline;  /* Adds underline when hovered */

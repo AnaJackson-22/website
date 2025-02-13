@@ -2,15 +2,16 @@ body {
     font-family: 'oswald', sans-serif;
     line-height: 1.6; 
     margin: 0;
+    color: #FF6961
 }
 
 .body-content {
-  padding: 21px;
+  padding: 35px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Oswald', sans-serif;  /* Applies a different font for headings */
-    font-weight: 700;  /* Makes headings bold */
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;  
     color: #222;  /* Darker color for emphasis */
 }
 
@@ -19,10 +20,12 @@ p {
     font-size: 1rem;
 }
 
+
+
 header {
     background: #990011;
     color: #fff;
-    padding: 25px 50px;
+    padding: 30px 50px;
 }
 header ul {
     list-style: none;
@@ -37,6 +40,16 @@ header a {
     color: white;
     text-decoration: none;
 }
+
+.header-wrapper {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 800px;
+    margin: auto;
+    filter: drop-shadow(0 0 50px black);
+}
+
 
 .blog-post {
     margin: 20px auto;
